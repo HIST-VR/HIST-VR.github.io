@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Ноутбуки</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="catalog">
+    <div class="container">
+      <header class="page-header">
+                <!-- icon-->
+      <link rel="FaviconIcon" href="favicon.ico" type="image/x-icon">
+      <link rel="shortcut" href="favicon.ico" type="image/x-icon">
+
+      <h1 class="visually-hidden">Каталог ноутбуків "The Equalizer"</h1>
+        <div class="page-header__logo">
+          <a href="index.html"><img src="img/black-logo-device.svg" alt="Equalizer" width="250" height="50"></a> <!--change logo (picture)-->
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__user-list">
+            <li class="main-nav__user-item  main-nav__user-item--search">
+              <form class="main-nav__search" method="get" action="https://echo.htmlacademy.ru">
+                <input class="main-nav__search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+                <button class="main-nav__search-btn" type="submit">Знайти</button>
+                <label class="main-nav__search-label" for="search">
+                  <span class="visually-hidden">Пошук:</span>
+                </label>
+              </form>
+            </li>
+            <li class="main-nav__user-item  main-nav__user-item--cart">
+              <a class="main-nav__user-link  main-nav__user-link--cart" href="#">Увійти</a>
+            </li>
+            <li class="main-nav__user-item  main-nav__user-item--compare">
+              <a class="main-nav__user-link  main-nav__user-link--compare" href="#">Порівняти</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list">
+            <li class="main-nav__item  main-nav__item--catalog">
+              <a class="main-nav__link  main-nav__link--catalog">Каталог товарів</a>
+              <div class="main-nav__sub-wrap">
+                <ul class="main-nav__sub-list">
+                  <li class="main-nav__sub-column">
+                    <a href="#">Ноутбуки</a>
+                    <a href="catalog.html">Телефони</a>
+                    <a href="#">Монітори</a>
+                  </li>
+                  <li class="main-nav__sub-column">
+                    <a href="#">Розумні годинники</a>
+                    <a href="#">Телевізори</a>
+                    <a href="#">Навушники</a>
+                  </li>
+                  <li class="main-nav__sub-column">
+                    <a href="#">Квадрокоптери</a>
+                    <a href="#">Роутери</a>
+                    <a href="#">Інше</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="main-nav__item  main-nav__item--contacts">
+              <a class="main-nav__link  main-nav__link--contacts" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <main class="page-content">
+      <div class="container">
+        <header class="page-content__header">
+          <h2 class="page-content__title">Ультрабук Vinga Iron S140 (S140-P508256G)</h2>
+          <nav class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="index.html">Головна</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#">Каталог товарів</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a>Ноутбуки</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div class="page-content__wrap">
+        <section class="sidebar">
+          <div class="sidebar__title-wrap">
+            <h2>Фільтри:</h2>
+          </div>
+          <form class="filter" method="get" action="#">
+            <div class="filter__item-wrap">
+              <fieldset class="filter__item  filter__item--price">
+                <legend>Вартість</legend>
+                <div class="filter-range">
+                  <div class="filter-range__controls">
+                    <div class="filter-range__scale">
+                      <div class="filter-range__bar"></div>
+                    </div>
+                    <div class="filter-range__toggle  filter-range__toggle--min"></div>
+                    <div class="filter-range__toggle  filter-range__toggle--max"></div>
+                  </div>
+                  <div class="filter-range__price">
+                    <label class="filter-range__label  filter-range__label--min">від
+                      <input class="filter-range__input" type="text" name="min-price" value="0">
+                    </label>
+                    <label class="filter-range__label  filter-range__label--max">до
+                      <input class="filter-range__input" type="text" name="max-price" value="99 999">
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="filter__item-wrap">
+              <fieldset class="filter__item">
+                <legend>Колір</legend>
+                <ul class="filter__checkbox-list">
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-1" type="checkbox" name="black">
+                      <label class="filter__checkbox-label" for="filter-check-1">Чорний</label>
+                    </li>
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-2" type="checkbox" name="white">
+                      <label class="filter__checkbox-label" for="filter-check-2">Білий</label>
+                    </li>
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-3" type="checkbox" name="grey">
+                      <label class="filter__checkbox-label" for="filter-check-3">Сірий</label>
+                    </li>
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-4" type="checkbox" name="other">
+                      <label class="filter__checkbox-label" for="filter-check-4">Інші</label>
+                    </li>
+                  </ul>
+              </fieldset>
+            </div>
+            <div class="filter__item-wrap">
+              <fieldset class="filter__item">
+                <legend>Виробник</legend>
+                <ul class="filter__checkbox-list">
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-5" type="checkbox" name="Apple">
+                      <label class="filter__checkbox-label" for="filter-check-5">Apple</label>
+                    </li>
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-6" type="checkbox" name="Acer">
+                      <label class="filter__checkbox-label" for="filter-check-6">Acer</label>
+                    </li>
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-7" type="checkbox" name="Dell">
+                      <label class="filter__checkbox-label" for="filter-check-7">Dell</label>
+                    </li>
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-8" type="checkbox" name="HP">
+                      <label class="filter__checkbox-label" for="filter-check-8">HP</label>
+                    </li>
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-9" type="checkbox" name="Asus">
+                      <label class="filter__checkbox-label" for="filter-check-9">Asus</label>
+                    </li>
+                  </ul>
+              </fieldset>
+            </div>
+            <div class="filter__item-wrap">
+              <fieldset class="filter__item">
+                <legend>Тип матриці</legend>
+                <ul class="filter__radio-list">
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-10" type="checkbox" name="IPS">
+                      <label class="filter__checkbox-label" for="filter-check-10">IPS</label>
+                    </li>
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-11" type="checkbox" name="TV\*VA">
+                      <label class="filter__checkbox-label" for="filter-check-11">TV\*VA</label>
+                    </li>
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-12" type="checkbox" name="OLED">
+                      <label class="filter__checkbox-label" for="filter-check-12">OLED</label>
+                    </li>
+                  </ul>
+              </fieldset>
+            </div>
+                        <div class="filter__item-wrap">
+              <fieldset class="filter__item">
+                <legend>Роздільна здатність екрану</legend>
+                <ul class="filter__radio-list">
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-10" type="checkbox" name="3840x2160 (4K)">
+                      <label class="filter__checkbox-label" for="filter-check-10">3840x2160 (4K)</label>
+                    </li>
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-11" type="checkbox" name="2560x1600 (2560x1440)">
+                      <label class="filter__checkbox-label" for="filter-check-11">2560x1600 (2560x1440)</label>
+                    </li>
+                    <li class="filter__checkbox-item">
+                      <input class="filter__checkbox-input  visually-hidden" id="filter-check-12" type="checkbox" name="1920x1080 FullHD">
+                      <label class="filter__checkbox-label" for="filter-check-12">1920x1080 FullHD</label>
+                    </li>
+                  </ul>
+              </fieldset>
+            </div>
+            <button class="btn" type="submit">Більше</button>
+          </form>
+        </section>
+
+        <section class="goods">
+          <h2 class="visually-hidden">Товари</h2>
+          <section class="goods__sort">
+            <h3>Сортування:</h3>
+            <ul class="goods__sort-list">
+              <li class="goods__sort-item  goods__sort-item--active"><a href="#">За ціною</a></li>
+              <li class="goods__sort-item"><a href="#">Популярні</a></li>
+            </ul>
+            <ul class="goods__sort-updown">
+              <li class="goods__sort-up">
+                <a class="goods__sort-up-link" href="#">
+                  <img src="img/sort-up.svg" alt="По возрастанию" width="11" height="10">
+                </a>
+              </li>
+              <li class="goods__sort-down  goods__sort-down--active">
+                <a class="goods__sort-down-link" href="#">
+                  <img src="img/sort-down.svg" alt="По убыванию" width="11" height="10">
+                </a>
+              </li>
+            </ul>
+          </section>    
+        <!-- Товари -->
+          <section class="goods__list">
+            <article class="goods-item">
+              <img class="goods-item__img" src="https://hotline.ua//img/tx/230/230014780_s265.jpg" alt="Vinga Iron S140 (S140-P508256G)" width="360" height="380">
+              <span class="goods-item__new"></span>
+              <div class="goods-item__hover">
+                <a class="btn" href="VingaIron.html">Переглянути ціни</a>
+                <a class="goods-item__add" href="#">Порівняти</a>
+              </div>
+              <div class="goods-item__info">
+                <h1><a href="#">Vinga Iron S140 (S140-P508256G)</a></h1>
+                <span class="goods-item__price">8 999 – 9 839 грн.</span>
+              </div>
+            </article>
+            <article class="goods-item">
+              <img class="goods-item__img" src="https://hotline.ua//img/tx/206/206079352_s265.jpg" alt="Apple MacBook Air 13 Gold 2019 (MVFM2)" width="360" height="380">
+              <span class="goods-item__new">HOT</span>
+              <div class="goods-item__hover">
+                <a class="btn" href="#">Переглянути ціни</a>
+                <a class="goods-item__add" href="#">Порівняти</a>
+              </div>
+              <div class="goods-item__info">
+                <h1><a href="#">Apple MacBook Air 13" Gold 2019 (MVFM2)</a></h1>
+                <span class="goods-item__price">22 199 – 35 999 грн.</span>
+              </div>
+            </article>
+            <article class="goods-item">
+              <img class="goods-item__img" src="https://hotline.ua//img/tx/228/228306380_s265.jpg" alt="ASUS M509DA (M509DA-EJ347)" width="360" height="380">
+              <span class="goods-item__new">NEW</span>
+              <div class="goods-item__hover">
+                <a class="btn" href="#">Переглянути ціни</a>
+                <a class="goods-item__add" href="#">Порівняти</a>
+              </div>
+              <div class="goods-item__info">
+                <h1><a href="#">ASUS M509DA (M509DA-EJ347)</a></h1>
+                <span class="goods-item__price">11 260 – 12 189 грн.</span>
+              </div>
+            </article>
+            <article class="goods-item">
+              <img class="goods-item__img" src="https://hotline.ua//img/tx/197/197405566_s265.jpg" alt="Apple MacBook Pro 15 Space Gray 2019 (MV902)" width="360" height="380">
+              <div class="goods-item__hover">
+                <a class="btn" href="#">Переглянути ціни</a>
+                <a class="goods-item__add" href="#">Порівняти</a>
+              </div>
+              <div class="goods-item__info">
+                <h1><a href="#">Apple MacBook Pro 15" Space Gray 2019 (MV902)</a></h1>
+                <span class="goods-item__price">51 215 – 79 999 грн.</span>
+              </div>
+            </article>
+            <article class="goods-item">
+              <img class="goods-item__img" src="https://hotline.ua//img/tx/212/212781099_s265.jpg" alt="Xiaomi Mi Gaming Laptop 15.6 Black (JYU4146CN)" width="360" height="380">
+              <div class="goods-item__hover">
+                <a class="btn" href="#">Переглянути ціни</a>
+                <a class="goods-item__add" href="#">Порівняти</a>
+              </div>
+              <div class="goods-item__info">
+                <h1><a href="#">Xiaomi Mi Gaming Laptop 15.6 Black (JYU4146CN)</a></h1>
+                <span class="goods-item__price">28 989 – 33 366 грн.</span>
+              </div>
+            </article>
+            <article class="goods-item">
+              <img class="goods-item__img" src="https://hotline.ua//img/tx/230/230171742_s265.jpg" alt="Xiaomi Mi Notebook Pro 15.6" width="360" height="380">
+              <span class="goods-item__new  goods-item__new--active">HOT</span>
+              <div class="goods-item__hover">
+                <a class="btn" href="#">Переглянути ціни</a>
+                <a class="goods-item__add" href="#">Порівняти</a>
+              </div>
+              <div class="goods-item__info">
+                <h1><a href="#">Xiaomi Mi Notebook Pro 15.6</a></h1>
+                <span class="goods-item__price">29 850 – 30 999 грн.</span>
+              </div>
+            </article>
+            <article class="goods-item">
+              <img class="goods-item__img" src="https://hotline.ua//img/tx/181/181499874_s265.jpg" alt="ASUS ROG Strix Scar Edition GL703GE (GL703GE-IS74)" width="360" height="380">
+              <span class="goods-item__new  goods-item__new--active">NEW</span>
+              <div class="goods-item__hover">
+                <a class="btn" href="#">Переглянути ціни</a>
+                <a class="goods-item__add" href="#">Порівняти</a>
+              </div>
+              <div class="goods-item__info">
+                <h1><a href="#">ASUS ROG Strix Scar Edition GL703GE (GL703GE-IS74)</a></h1>
+                <span class="goods-item__price">26 399 – 36 768 грн.</span>
+              </div>
+            </article>
+            <article class="goods-item">
+              <img class="goods-item__img" src="https://hotline.ua//img/tx/197/197405573_s265.jpg" alt="Apple MacBook Pro 15 Space Gray 2019 (MV912)" width="360" height="380">
+              <span class="goods-item__new  goods-item__new--active">HOT</span>
+              <div class="goods-item__hover">
+                <a class="btn" href="#">Переглянути ціни</a>
+                <a class="goods-item__add" href="#">Порівняти</a>
+              </div>
+              <div class="goods-item__info">
+                <h1><a href="#">Apple MacBook Pro 15" Space Gray 2019 (MV912)</a></h1>
+                <span class="goods-item__price">57 835 – 99 999 грн.</span>
+              </div>
+            </article>
+          <!--<article class="goods-item">
+              <img class="goods-item__img" src="SRC" alt="NAME" width="360" height="380">
+              <span class="goods-item__new  goods-item__new--active">NEW</span>
+              <div class="goods-item__hover">
+                <a class="btn" href="#">Переглянути ціни</a>
+                <a class="goods-item__add" href="#">Порівняти</a>
+              </div>
+              <div class="goods-item__info">
+                <h1><a href="#">NAME</a></h1>
+                <span class="goods-item__price">PRICE.</span>
+              </div>
+            </article -->
+          </section>
+
+
+          <ul class="pagination">
+            <li>
+              <a class="pagination__control  pagination__control--prev" href="#">Назад</a>
+            </li>
+            <li class="pagination__list-wrap">
+              <ul class="pagination__list">
+                <li class="pagination__item  pagination__item--active">
+                  <a href="#">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#">3</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="pagination__control  pagination__control--next" href="#">Вперед</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__user-panel">
+          <div class="page-footer__logo">
+              <a href="index.html"><img src="img/yellow-logo-device.svg" alt="DEVICE" width="164" height="36"></a>
+          </div>
+          <ul class="page-footer__user-list">
+            <li class="page-footer__user-item  page-footer__user-item--login">
+              <a class="page-footer__user-link  page-footer__user-link--profile" href="#">Валентин Петухов</a>
+              <a class="page-footer__user-link  page-footer__user-link--logout" href="#">Выйти</a>
+            </li>
+            <li class="page-footer__user-item  page-footer__user-item--compare">
+              <a class="page-footer__user-link  page-footer__user-link--compare" href="#">Сравнить</a>
+            </li>
+            <li class="page-footer__user-item  page-footer__user-item--cart">
+              <a class="page-footer__user-link  page-footer__user-link--cart" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__info">
+          <div class="page-footer__address">
+            <span>г. Москва, ул. Строителей, 15</span>
+          </div>
+          <div class="page-footer__services">
+            <a class="page-footer__services-link  page-footer__services-link--delivery" href="#">Доставка</a>
+            <a class="page-footer__services-link  page-footer__services-link--warranty" href="#">Гарантия</a>
+            <a class="page-footer__services-link  page-footer__services-link--contacts" href="#">Контакты</a>
+          </div>
+          <div class="page-footer__phone">
+            <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+          </div>
+        </div>
+        <div class="page-footer__links">
+          <div class="page-footer__links-wrap">
+            <ul class="page-footer__social-list">
+              <li class="page-footer__social-item">
+                <a class="page-footer__social-link  page-footer__social-link--fb" href="#">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
+              </li>
+              <li class="page-footer__social-item">
+                <a class="page-footer__social-link  page-footer__social-link--inst" href="#">
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+              <li class="page-footer__social-item">
+                <a class="page-footer__social-link  page-footer__social-link--tw" href="#">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+            </ul>
+            <div class="page-footer__copyright">
+              <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="HTML Academy" width="27" height="35"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
