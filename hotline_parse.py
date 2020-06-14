@@ -27,15 +27,21 @@ def parse(html):
         for row in table.find_all(class_='product-item'):
             #print(row)
             title = row.find_all('div', class_='item-info')
+            print(title)
             price = (row.find_all('div', class_='price-md'))
+            price_range = (row.find('div', class_='text-sm'))
+            img = (row.find('img'))
             try:
+                # for i in images:
+                #     img = (i['src'])
                 projects.append({
                     'title': title[0].a.text.strip(),
-                    'price': (price[0].span.text).replace(u'\xa0', ' '),
+                    'price': (price[0].span.text),
+                    'price_range': price_range.text,
+                    'image': 'https://hotline.ua/' + img['src'],
                 })
             except:
                 None
-
 
         return projects
     except:
@@ -46,15 +52,15 @@ def parse(html):
 def save(projects, path):
     with open(path, 'w') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(('Название', 'Цена'))
+        writer.writerow(('Name', 'Price', 'Price range', 'Image'))
 
         for project in projects:
-            writer.writerow((project['title'], (project['price'])))
+            writer.writerow((project['title'], (project['price']), project['price_range'], project['image']))
 
 
 def main():
     #page_count = get_page_count(get_html(BASE_URL))
-    page_count = 50
+    page_count = 2
     print('Всего страниц:', page_count)
 
     projects = []
@@ -64,12 +70,13 @@ def main():
         projects.extend(parse(get_html(BASE_URL + '?p=%d' % page)))
     print("Парсинг 100%")
 
-    for project in projects:
-        print(project)
+    # for project in projects:
+    #     print(project)
+
 
     save(projects, 'hotline_parse.cvs')
 
-    print(projects)
+    #print(projects)
 
 
 if __name__ == '__main__':
